@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - OG Cafe & Cream</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-ice-cream"></i> OG Cafe & Cream
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get In Touch With Us</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:8484802533">(848) 480-2533</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>
+                                Tuesday - Sunday: 6 AM - 9 PM<br>
+                                Monday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <div>
+                            <h3>Follow Us on Facebook</h3>
+                            <p><a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank">OG Cafe & Cream</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook-f"></i> Follow On Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional - Placeholder) -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+                <i class="fas fa-map"></i>
+                <p>313 Ocean Gate Ave., Ocean Gate, NJ 08740</p>
+                <p style="font-size: 0.9em; margin-top: 10px; color: #666;">
+                    Visit us during our business hours and experience the best ice cream, donuts, and breakfast treats in Ocean Gate!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OG Cafe & Cream</h4>
+                    <p>313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
+                    <p><a href="tel:8484802533">(848) 480-2533</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OG Cafe & Cream. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
