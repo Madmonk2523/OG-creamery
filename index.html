@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OG Cafe & Cream - Ice Cream & Donuts</title>
+    <title>OG Cafe & Cream - Ice Cream, Donuts & Breakfast</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,20 +20,21 @@
                 <span></span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
+        <div class="hero-particles"></div>
         <div class="hero-content">
-            <h1>Welcome to OG Cafe & Cream</h1>
-            <p>Family-Operated Ice Cream, Fresh Hot Donuts & Breakfast Sandwiches</p>
-            <a href="menu.html" class="btn btn-primary">View Menu</a>
+            <h1 class="hero-title">Welcome to OG Cafe & Cream</h1>
+            <p class="hero-subtitle">Family-Operated Ice Cream, Fresh Hot Donuts & Breakfast Sandwiches</p>
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
         </div>
     </section>
 
@@ -67,23 +68,327 @@
         </div>
     </section>
 
-    <!-- Hours Section -->
-    <section class="hours-section">
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
         <div class="container">
-            <div class="hours-content">
-                <div class="hours-info">
-                    <h2>Visit Us Today</h2>
-                    <p><strong>Address:</strong><br>313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
-                    <p><strong>Phone:</strong><br><a href="tel:8484802533">(848) 480-2533</a></p>
+            <!-- Beverages -->
+            <div class="menu-category">
+                <h2><i class="fas fa-mug-hot"></i> Beverages</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Hot Coffee</h3>
+                            <span class="price">$2.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ice Coffee</h3>
+                            <span class="price">$5.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Hot Chocolate</h3>
+                            <span class="price">$2.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tea</h3>
+                            <span class="price">$2.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Water</h3>
+                            <span class="price">$2.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Soda</h3>
+                            <span class="price">$2.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Water Bottle</h3>
+                            <span class="price">$2.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Juice</h3>
+                            <span class="price">$2.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Box Of Joe</h3>
+                            <span class="price">$16.00</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hours-table">
-                    <h3>Hours</h3>
-                    <table>
-                        <tr>
-                            <td>Tuesday - Sunday</td>
-                            <td>6 AM - 9 PM</td>
-                        </tr>
-                    </table>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-category">
+                <h2><i class="fas fa-egg"></i> Breakfast</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Butter Bagel</h3>
+                            <span class="price">$3.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Cream Cheese Bagel</h3>
+                            <span class="price">$3.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Egg and Cheese</h3>
+                            <span class="price">$6.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Porkroll Egg & Cheese</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Bacon Egg & Cheese</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sausage Egg & Cheese</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Hash Brown</h3>
+                            <span class="price">$2.00</span>
+                        </div>
+                        <p class="menu-description">Add to your favorite sandwich</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pepper & Eggs</h3>
+                            <span class="price">$7.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pork Roll & Cheese</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ham Egg & Cheese</h3>
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Western Omelette Sandwich</h3>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Steak Egg & Cheese</h3>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Chorizo Egg & Cheese</h3>
+                            <span class="price">$8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Egg Whites & Spinach</h3>
+                            <span class="price">$8.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>French Toast</h3>
+                            <span class="price">$6.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donuts -->
+            <div class="menu-category">
+                <h2><i class="fas fa-donut"></i> Donuts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>1/2 Dozen Donuts</h3>
+                            <span class="price">$16.75</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>1 Dozen Donuts</h3>
+                            <span class="price">$23.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Crumb Cake</h3>
+                            <span class="price">$5.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Family-Owned & Operated</h2>
+                    <p>
+                        Welcome to OG Cafe & Cream, where family tradition meets delicious treats. 
+                        We are a family-operated ice cream and fresh hot donut shop dedicated to bringing 
+                        joy and flavor to our community in Ocean Gate, New Jersey.
+                    </p>
+                    <p>
+                        What started as a passion for making quality treats has grown into a beloved 
+                        local destination. We've expanded our offerings to include breakfast sandwiches, 
+                        hot beverages, and much more – all crafted with care and quality ingredients.
+                    </p>
+                    <p>
+                        Every morning, we bake fresh donuts, prepare breakfast sandwiches, and serve 
+                        expertly crafted beverages. Our ice cream is premium and creamy, made to delight 
+                        every palate. Whether you're starting your day with us or treating yourself to 
+                        something sweet, we're here to make your experience memorable.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <h3>Why Choose OG Cafe & Cream?</h3>
+                    <div class="highlight-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>Family Values</h4>
+                        <p>Built on love, passion, and dedication to quality</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Fresh Ingredients</h4>
+                        <p>Quality ingredients baked and prepared fresh daily</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Community</h4>
+                        <p>A gathering place for friends and families since day one</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-smile"></i>
+                        <h4>Customer Care</h4>
+                        <p>Every customer is treated like family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:8484802533">(848) 480-2533</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>
+                                Tuesday - Sunday: 6 AM - 9 PM<br>
+                                Monday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <div>
+                            <h3>Follow Us on Facebook</h3>
+                            <p><a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank">OG Cafe & Cream</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="social-btn">
+                            <i class="fab fa-facebook-f"></i> Follow On Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-box">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
                 </div>
             </div>
         </div>
@@ -101,10 +406,10 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            
+            // Update active link
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
         });
     });
 
@@ -26,11 +30,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Active link highlighting
-    navLinks.forEach(link => {
-        if (link.href === window.location.href) {
-            link.classList.add('active');
-        }
+    // Update active nav link on scroll
+    window.addEventListener('scroll', function() {
+        let current = '';
+        const sections = document.querySelectorAll('section');
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 60) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
     });
 
     // Contact form submission
@@ -123,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe menu items and cards for animation
-    document.querySelectorAll('.menu-item, .feature-card, .contact-card').forEach(element => {
+    document.querySelectorAll('.menu-item, .feature-card, .contact-card, .highlight-item').forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
