@@ -310,86 +310,80 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <div class="contact-wrapper">
-                <!-- Contact Information -->
-                <div class="contact-info-box">
-                    <h2>Contact Information</h2>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Visit Us</h3>
-                            <p>313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
-                        </div>
-                    </div>
+            <div class="contact-header">
+                <h2>Get in Touch</h2>
+                <p>Visit us, call us, or connect with us on social media</p>
+            </div>
 
-                    <div class="info-item">
+            <div class="contact-grid">
+                <!-- Location Card -->
+                <div class="contact-card-large">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-location-dot"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p class="address">313 Ocean Gate Ave.<br>Ocean Gate, NJ 08740</p>
+                    <p class="card-description">We're conveniently located in the heart of Ocean Gate. Stop by and experience the best ice cream, donuts, and breakfast in town!</p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-card-large">
+                    <div class="contact-card-icon">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p><a href="tel:8484802533">(848) 480-2533</a></p>
-                        </div>
                     </div>
+                    <h3>Call Us</h3>
+                    <p class="phone-number">
+                        <a href="tel:8484802533">(848) 480-2533</a>
+                    </p>
+                    <p class="card-description">Have questions about our menu or hours? Give us a call! We're happy to help and take orders for pickup or catering.</p>
+                </div>
 
-                    <div class="info-item">
+                <!-- Hours Card -->
+                <div class="contact-card-large">
+                    <div class="contact-card-icon">
                         <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Hours</h3>
-                            <p>
-                                Tuesday - Sunday: 6 AM - 9 PM<br>
-                                Monday: Closed
-                            </p>
+                    </div>
+                    <h3>Hours of Operation</h3>
+                    <div class="hours-list">
+                        <div class="hour-item">
+                            <span class="day">Tue - Sun:</span>
+                            <span class="time">6 AM - 9 PM</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Monday:</span>
+                            <span class="time">Closed</span>
                         </div>
                     </div>
-
-                    <div class="info-item">
-                        <i class="fab fa-facebook-f"></i>
-                        <div>
-                            <h3>Follow Us on Facebook</h3>
-                            <p><a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank">OG Cafe & Cream</a></p>
-                        </div>
-                    </div>
-
-                    <div class="social-buttons">
-                        <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="social-btn">
-                            <i class="fab fa-facebook-f"></i> Follow On Facebook
-                        </a>
-                    </div>
+                    <p class="card-description">Open for breakfast, lunch, and evening treats! Come early for the best selection of fresh donuts.</p>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form-box">
-                    <h2>Send us a Message</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                    <div id="formMessage" class="form-message"></div>
+                <!-- Facebook Card -->
+                <div class="contact-card-large">
+                    <div class="contact-card-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <p class="card-description">Connect with us on Facebook for updates, special offers, and photos of our delicious treats!</p>
+                    <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="social-btn-large">
+                        <i class="fab fa-facebook-f"></i> Visit Our Facebook Page
+                    </a>
                 </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <a href="tel:8484802533" class="action-btn">
+                    <i class="fas fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100063495163640" target="_blank" class="action-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Message on Facebook</span>
+                </a>
+                <a href="#home" class="action-btn">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>Back to Top</span>
+                </a>
             </div>
         </div>
     </section>
